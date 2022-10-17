@@ -3,8 +3,8 @@
 
 # In level four, give the user an option to play against the computer or to think of a number for the computer to guess.
 
-from level_one import level_one
-from level_three import level_three
+from level_one import play
+from level_three import computer_guess
 
 print("Let's Play a Game!")
 choice = input(
@@ -12,6 +12,6 @@ choice = input(
 )
 
 if choice.lower() == "a":
-    level_one()
+    play()
 elif choice.lower() == "b":
-    level_three()
+    computer_guess()

@@ -17,13 +17,12 @@ while guesses < 3:
     guesses = guesses + 1
 
     if computer_guess == number:
+        print(f"You lose. The computer guessed your number. Your number is {number}.")
         break
     elif computer_guess < number:
-        print("Your number is too low buddy")
+        print(f"The computer guessed too low. The computer guessed {computer_guess}.")
     elif computer_guess > number:
-        print('Your number is too high pal')
+        print(f"The computer guessed too high. The computer guessed {computer_guess}.")
 
-if computer_guess == number:
-    print("Wow! The computer has guessed your number!")
-elif computer_guess != number:
-    print('The computer could not guess my number. I just beat the computer.')
+    if guesses == 3:
+        print('The computer could not guess your number. You just beat the computer.')
